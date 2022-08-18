@@ -26,16 +26,16 @@ fuzzy n m  | n < 0 = m * (-0.5) -n
             | n > 0 = m * 0.5 -n
 
 
-nLocky :: Int -> IO() 
-nLocky y    | mod y 10 == 0 = "Numero de la suerte"
-            | y /= 7 = "Sigue participando"
+-- nLocky :: Int -> IO() 
+-- nLocky y    | mod y 10 == 0 = "Numero de la suerte"
+--             | y /= 7 = "Sigue participando"
 
-addNLocky :: Int -> Int
-addNLocky = filter (\x -> (mod x 10) == 0)
+-- addNLocky :: Int -> Int
+-- addNLocky = filter (\x -> (mod x 10) == 0)
 
 
 
-tombola = nLocky . addNLocky
+-- tombola = nLocky . addNLocky
 
 
 
