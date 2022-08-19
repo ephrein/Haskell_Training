@@ -1,10 +1,13 @@
+{-# OPTIONS_GHC -Wno-incomplete-patterns #-}
 import Text.XHtml (afile)
 -- pattern matching
 
 formula :: String -> String
 formula "hola"= "suena"
 formula "la"= "suena igual pero no es igual"
-formula "hoa"= "igual pero modo bebe"
+formula x = "igual pero modo bebe"
+
+
 
 
 
